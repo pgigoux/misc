@@ -8,6 +8,9 @@ from numpy import float64
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment
 
+# Project file name
+PROJECT_FILE = 'projects.txt'
+
 # Column names
 COL_PROJECT_PATH = 'Project Path'
 COL_PROJECT_CODE = 'Project Code'
@@ -284,23 +287,6 @@ def recalculate_totals(df):
     return df_out
 
 
-def test(df):
-    """
-        This routine is not efficient, but it doesn't matter (small data set).
-        :param df: input data frame
-        :type df: pd.DataFrame
-        :return: converted data frame
-        :rtype: pd.DataFrame
-        """
-    assert (isinstance(df, pd.DataFrame))
-
-    # print(df.keys())
-    # for row_index, row in df.iterrows():
-    #     print(row_index)
-    #     for col in df.keys():
-    #         print(df.at['Totals', col])
-
-
 def convert_value(value):
     """
     Converts numpy.float64 values to float and replaces zero data with a '-'.
@@ -528,7 +514,11 @@ if __name__ == '__main__':
     output_file = 'Output_' + input_file
     debug = args.debug
 
-    master_project_list = read_project_list('projects.txt')
+    try:
+        master_project_list = read_project_list(PROJECT_FILE)
+    except FileNotFoundError as e:
+        print('Project file not found', e)
+        exit(0)
     if debug:
         print(master_project_list)
 
