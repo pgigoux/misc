@@ -479,6 +479,7 @@ def write_excel_file(df, project_list, file_name):
         # print(excel_column_name(n_cols - 1) + str(row_number))
         ws[excel_column_name(n_cols - 1) + str(row_number)].number_format = '0.0000'
 
+    # Save output file
     wb.save(file_name)
 
 
