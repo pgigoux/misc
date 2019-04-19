@@ -231,9 +231,8 @@ def round_data(df):
 
 def recalculate_totals(df):
     """
-    Round time data to the nearest 15 minute boundary (x.0 x.25, xx.5, x.75).
-    The rounding errors are recorded into the (new) 'Errors' column.
-    The row and column totals become inconsistent after this point.
+    Recalculate the row and column totals. This funtion should be called
+    after calling round_data so the totals are consistent with the data.
     :param df: input data frame
     :type df: pd.DataFrame
     :return: converted data frame
@@ -306,7 +305,7 @@ def convert_value(value):
 
 def get_row_and_index(df, name):
     """
-    Auxiliary funtion that returns the row and the row index for the row where COL_PROJECT_PATH matches a given name.
+    Auxiliary function that returns the row and the row index for the row where COL_PROJECT_PATH matches a given name.
     Provided to prevent code redundancy in the program.
     :param df: data frame
     :type df: pd.DataFrame
@@ -321,13 +320,18 @@ def get_row_and_index(df, name):
     return row, row_index
 
 
-def get_row_columns(df, row_index, column_names):
+def get_row_columns(df, row_index, output_row_index, column_names):
     """
-    :param df: data frame
+    Return the column values for a given row index. The output row index will be used
+    when calculating the formulas since the order of rows in the output spreadsheet is
+    not necessarily the same as the order of rows in the input data. The formula will
+    be empty if the output
     :type df: pd.DataFrame
     :param column_names: list of column names
     :param row_index: row index (zero indexed)
     :type row_index: int
+    :param output_row_index: output row index (used in formulas)
+    :type output_row_index: int
     :return: list of column values for the row
     :rtype: list
     """
@@ -335,8 +339,10 @@ def get_row_columns(df, row_index, column_names):
     column_values = []
     for col_name in column_names:
         if col_name == COL_FORMULAS:
-            value = '=sum(B' + str(row_index + 2) + ':' + excel_column_name(n - 2) + str(row_index + 2) + ')'
-            # print(value)
+            if output_row_index is not None:
+                value = '=sum(B' + str(output_row_index + 2) + ':' + excel_column_name(n - 2) + str(output_row_index + 2) + ')'
+            else:
+                value = ''
         else:
             value = convert_value(df.at[row_index, col_name])
         column_values.append(value)
@@ -397,35 +403,41 @@ def write_excel_file(df, project_list, file_name):
     # print(n_rows, n_cols)
 
     # Prepare the spreadsheet heading (column titles)
-    heading = list(df.keys()).copy()
-    heading = heading[:-1] + [COL_FORMULAS, COL_ERRORS]
-    # print(heading)
-    ws.append(heading)
+    column_titles = list(df.keys()).copy()
+    column_titles = column_titles[:-1] + [COL_FORMULAS, COL_ERRORS]
+    ws.append(column_titles)
 
     # Append the time data
-    for project in project_list:
+    # Some formulas are inserted here
+    project_row_index = 0
+    for project_name in project_list:
         try:
-            row, row_index = get_row_and_index(df, project)
+            row, row_index = get_row_and_index(df, project_name)
         except IndexError:
+            # print('ignoring', project_name, project_row_index)
             continue
-        row_list = get_row_columns(df, row_index, heading)
+        row_list = get_row_columns(df, row_index, project_row_index, column_titles)
+        project_row_index += 1
         ws.append(row_list)
 
-    # Append the column totals
+    # Append the row with the column totals
     row, row_index = get_row_and_index(df, ROW_TOTALS)
-    row_list = get_row_columns(df, row_index, heading)
+    row_list = get_row_columns(df, row_index, None, column_titles)
     ws.append(row_list)
 
-    # Append the column formulas
-    column_list = list(df.keys()).copy()
-    column_list = column_list[1:-2]  # remove project name, totals and errors
+    # -- Formulas start here
+
+    # Append the row containing the column totals (formulas)
+    column_list = column_titles[1:-2]  # remove project name, totals and errors
     # print(column_list)
-    row_list = ['Formulas']
+    row_list = [ROW_FORMULAS]
     for col_number in range(1, len(column_list) + 1):
         # print(col_number, excel_column_name(col_number))
         row_list.append('=sum(' + excel_column_name(col_number) + '2:' +
-                        excel_column_name(col_number) + str(n_rows - 2))
-    # print(row_list)
+                        excel_column_name(col_number) + str(n_rows - 2) + ')')
+    # Sum of all column totals
+    row_list.append('=sum(B' + str(n_rows) + ':' +
+                    excel_column_name(len(column_list) - 1) + str(n_rows) + ')')
     ws.append(row_list)
 
     # -- Font definitions start here
@@ -446,14 +458,14 @@ def write_excel_file(df, project_list, file_name):
     # Format totals in bold. Use the same font definition used for the titles.
     for col_number in range(1, n_cols - 1):
         # print(excel_column_name(col_number) + str(n_rows - 1))
-        ws[excel_column_name(col_number) + str(n_rows - 1)].font = ft
+        ws[excel_column_name(col_number) + str(n_rows)].font = ft
     for row_number in range(1, n_rows):
         # print(excel_column_name(n_cols - 3) + str(row_number))
         ws[excel_column_name(n_cols - 3) + str(row_number)].font = ft
 
     # Change format and color in the formulas
     ft = Font(name=FONT_NAME, bold=True, italic=True, color="FF0000")
-    for col_number in range(1, len(column_list) + 1):
+    for col_number in range(1, len(column_list) + 2):
         # print(excel_column_name(col_number))
         ws[excel_column_name(col_number) + str(n_rows)].font = ft
     for row_number in range(2, n_rows):
@@ -511,6 +523,7 @@ if __name__ == '__main__':
 
     # Get command line arguments
     args = get_args(sys.argv)
+    # args = get_args(['ptimecard', 'example.xlsx'])
     input_file = args.file
     output_file = 'Output_' + input_file
     debug = args.debug
