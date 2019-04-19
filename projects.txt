@@ -1,0 +1,20 @@
+# Project list. The purpose of this list is to define the valid project names that
+# can appear are expected in the input workbook. It is also used to specify the order
+# in which the projects should appear in the output spreadsheet. The number of projects
+# listed here can be more than the ones currently active.
+Time off > Administrative
+Time off > Sick
+Time off > Holiday
+Time off > Leave
+Time off > Vacation
+Core > Day Time Operations
+Core > Fault resolution
+Core > Software releases
+Misc > Administration
+Misc > PIO
+Misc > Training
+Projects > BFO
+Projects > GemOps Improvements
+Projects > GRACES
+Projects > NGS2
+Projects > RT Upgrades
