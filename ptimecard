@@ -1,9 +1,0 @@
-#!/bin/bash
-
-. $HOME/.bash_profile
-
-conda activate py35
-
-python ptimecard.py "$@"
-
-conda deactivate
