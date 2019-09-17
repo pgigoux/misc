@@ -4,7 +4,8 @@ unalias *
 
 set tmp1="/tmp/yumdeps1-`date +%Y%M%d%H%M%S`"
 set tmp2="/tmp/yumdeps2-`date +%Y%M%d%H%M%S`"
-set output = './deplist'
+set info = './pkg.info'
+set dep = './pkg.dep'
 #echo $tmp1, $tmp2
 
 yum list | egrep 'gemini-production|gemini-devel|gemini-testing' | awk '{print $1}' > $tmp1
@@ -12,10 +13,13 @@ yum list | egrep 'gemini-production|gemini-devel|gemini-testing' | awk '{print $
 cp /dev/null $tmp2
 
 foreach pkg (`cat $tmp1`)
-    #yum deplist VDCT 2>/dev/null $pkg>>log;
+    (yum info $pkg >> $tmp2) >& errors
+end
+mv $tmp2 $info
+
+foreach pkg (`cat $tmp1`)
     (yum deplist $pkg >> $tmp2) >& errors
 end
-
-mv $tmp2 $output
+mv $tmp2 $dep
 
 rm -f $tmp1 $tmp2
