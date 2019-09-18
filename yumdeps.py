@@ -20,57 +20,6 @@ KEY_DEP_LIST = [KEY_PACKAGE, KEY_DEPENDENCY, KEY_PROVIDER]
 UNDEFINED = 'undefined'
 
 
-# class PkgDict:
-#
-#     def __init__(self):
-#         self.pkg = {}
-#
-#     def add_package(self, pkg_name, pkg_version):
-#         print 'add_package', pkg_name, pkg_version
-#         if pkg_name not in self.pkg:
-#             self.pkg[pkg_name] = pkg_version
-#         else:
-#             print 'package ' + pkg_name + ' already exists, ignored'
-#
-#     def is_package(self, pkg_name):
-#         return pkg_name in self.pkg
-#
-#
-# class DepDict:
-#
-#     def __init__(self):
-#         self.dep = {}
-#
-#     def add_dependency(self, pkg_name, dep_name):
-#         print 'add_dependency', pkg_name, dep_name
-#         if pkg_name in self.dep:
-#             if dep_name not in self.dep[pkg_name]:
-#                 self.dep[pkg_name].update({dep_name: []})
-#             else:
-#                 print 'dependency ' + dep_name + ' already exists for package ' + pkg_name
-#         else:
-#             self.dep[pkg_name] = {dep_name: []}
-#
-#     def add_provider(self, pkg_name, dep_name, provider, version):
-#         # arch, _ = DepDict._extract_name_and_arch(pkg_name)
-#         if pkg_name in self.dep:
-#             if dep_name in self.dep[pkg_name]:
-#                 # r_name, r_repo = DepDict._extract_version_and_repo(version)
-#                 self.dep[pkg_name][dep_name].append((provider, version))
-#                 print 'adding provider', provider
-#             else:
-#                 raise ValueError('package ' + pkg_name + ' does not exist')
-#         else:
-#             raise ValueError('package ' + pkg_name + 'does not exist')
-#
-#     def dump(self):
-#         for pkg_name in sorted(self.dep):
-#             print 'Package', pkg_name
-#             for dep_name in sorted(self.dep[pkg_name]):
-#                 print ' ' * 2 + dep_name
-#                 for name in sorted(self.dep[pkg_name][dep_name]):
-#                     print ' ' * 4, name
-
 class PkgDep:
 
     def __init__(self):
@@ -91,7 +40,7 @@ class PkgDep:
         :type release: str
         :param repository: repository providing the package
         :type repository: str
-        :param summary: one line descriptio of the package
+        :param summary: one line description of the package
         :type summary: str
         :return: None
         """
@@ -283,7 +232,8 @@ class PkgDep:
             for dep_name in self.get_dependency_list(pkg_name):
                 print ' ' * 2 + dep_name
                 for p_name, p_version in self.get_provider_list(pkg_name, dep_name):
-                    print ' ' * 4 + '[' + p_name + ', ' + p_version + ']'
+                    flag = ' yes' if self.exists(p_name) else ' no'
+                    print ' ' * 4 + '[' + p_name + ', ' + p_version + ']' + flag
 
 
 def split_info_line(line):
