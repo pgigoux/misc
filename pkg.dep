@@ -1,9 +1,9 @@
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: VDCT.i686 2.5.1271-6
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -40,10 +40,10 @@ package: ag-ws.i686 5.9-14.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: agSeq-ws.i686 2014A.1.0-0.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -51,10 +51,10 @@ package: agSeq-ws.i686 2014A.1.0-0.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: altair-ws.i686 2.0-13.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -100,10 +100,10 @@ package: aom-ws.i686 2013B.2.8-2.el7.gemini
    provider: gemini-runtime.noarch 1-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: blt.i686 2.4-33.z.el6
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -134,10 +134,10 @@ package: blt.i686 2.4-33.z.el6
    provider: tk.i686 1:8.5.13-6.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: blt-devel.i686 2.4-33.z.el6
   dependency: blt = 2.4-33.z.el6
    provider: blt.x86_64 2.4-33.z.el6
@@ -147,10 +147,10 @@ package: blt-devel.i686 2.4-33.z.el6
    provider: tcl-devel.i686 1:8.5.13-8.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: boss-ws.i686 0.1-58.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -173,10 +173,10 @@ package: bto-ws.i686 2018A-0.el7.gemini
    provider: gemini-runtime.noarch 1-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: caqtdm-run.i686 1-3.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -264,10 +264,10 @@ package: caqtdm-run.i686 1-3.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: cfitsio.i686 3.370-1.el7.centos
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -311,10 +311,10 @@ package: cfitsio-debuginfo.x86_64 3.370-1.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: cfitsio-devel.i686 3.370-1.el7.centos
   dependency: /usr/bin/pkg-config
    provider: pkgconfig.x86_64 1:0.27.1-4.el7
@@ -331,10 +331,10 @@ package: cfitsio-devel.i686 3.370-1.el7.centos
    provider: pkgconfig.i686 1:0.27.1-4.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: cfitsio-ngs2.x86_64 3.370-1.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -357,10 +357,10 @@ package: cfitsio-static.i686 3.370-1.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: crcs-ws.i686 3.5-13.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -370,10 +370,10 @@ package: crcs-ws.i686 3.5-13.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: css.x86_64 1-7.el7.gemini
   dependency: epics-base
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
@@ -525,10 +525,10 @@ package: dhs-Console.i686 1.8.5-6.el7.gemini
    provider: xpa-tcl.i686 2.1.15-5.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhs-QlServer.i686 1.8.5-6.el7.gemini
   dependency: cfitsio
    provider: cfitsio.x86_64 3.370-10.el7
@@ -644,10 +644,10 @@ package: dhs-config-ins-CP.noarch 2016A.0.16-4.el7.gemini
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhs-config-ins-MK.noarch 2016B.0.12-0.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -662,10 +662,10 @@ package: dhs-config-wfs-CP.noarch 2015B.0.7-3.el7.gemini
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhs-config-wfs-MK.noarch 2013B.0.5-0.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -679,10 +679,10 @@ package: dhs-config-ws-CP.noarch 2011B.0.6-0.el7.gemini
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhs-config-ws-MK.noarch 2014A.0.6-0.el7.gemini
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
@@ -699,10 +699,10 @@ package: dhs-devel.i686 1.8.5-6.el7.gemini
    provider: dhs.i686 1.8.5-6.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhs-libs.i686 1.8.5-6.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -810,10 +810,10 @@ package: dhsClient-debuginfo.i686 1.0-0.el7
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: dhsClient-devel.i686 1.0-0.el7
   dependency: dhsClient
    provider: dhsClient.i686 0.7-1.el7.gemini
@@ -849,10 +849,10 @@ package: drama.i686 2.0-3.el7
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: drama-debuginfo.i686 2.0-3.el7
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
@@ -1013,10 +1013,10 @@ package: ds9-debuginfo.i686 7.4.1-3.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ecs-ws.i686 3.1-31.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -1028,10 +1028,10 @@ package: ecs-ws.i686 3.1-31.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics-base.i686 3.14.12-26.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -1393,10 +1393,10 @@ package: epics_extension-StripTool.i686 2.5.13-0.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_extension-StripTool-devel.i686 2.5.13-0.el7.gemini
   dependency: epics-base-devel
    provider: epics-base-devel.x86_64 3.14.12-26.el7.gemini
@@ -1499,10 +1499,10 @@ package: epics_extension-caTCL.i686 1.0-10.el7.gemini
    provider: tk.i686 1:8.5.13-6.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_extension-edm.i686 1.12.73-9.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -1635,16 +1635,16 @@ package: epics_extensions-configure-devel.i686 3.14.11-2.el7.gemini
    provider: epics_extensions-configure.i686 3.14.11-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-astlib.i686 3.14.9-17.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -1741,10 +1741,10 @@ package: epics_module-libts-compat.i686 0.1-9.el7.gemini
    provider: gemini-setup.i686 0.2-5.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-libts-compat.x86_64 0.1-9.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -1774,10 +1774,10 @@ package: epics_module-libts-compat-devel.i686 0.1-9.el7.gemini
    provider: epics_module-libts-compat.i686 0.1-9.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-libts-compat-devel.x86_64 0.1-9.el7.gemini
   dependency: epics-base-devel
    provider: epics-base-devel.x86_64 3.14.12-26.el7.gemini
@@ -1790,10 +1790,10 @@ package: epics_module-libts-compat-devel.x86_64 0.1-9.el7.gemini
    provider: epics_module-libts-compat.i686 0.1-9.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-pyEpics.x86_64 3.2-6.el7.gemini
   dependency: epics-base(x86-64)
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
@@ -1801,20 +1801,20 @@ package: epics_module-pyEpics.x86_64 3.2-6.el7.gemini
    provider: python.x86_64 2.7.5-80.el7_6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-slalib.i686 3.14.9-11.el7.gemini
   dependency: epics-base
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
    provider: epics-base.i686 3.14.12-26.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-slalib.x86_64 3.14.9-11.el7.gemini
   dependency: epics-base
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
@@ -1834,10 +1834,10 @@ package: epics_module-slalib-devel.i686 3.14.9-11.el7.gemini
    provider: epics_module-slalib.i686 3.14.9-11.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-slalib-devel.x86_64 3.14.9-11.el7.gemini
   dependency: epics-base-devel
    provider: epics-base-devel.x86_64 3.14.12-26.el7.gemini
@@ -1847,10 +1847,10 @@ package: epics_module-slalib-devel.x86_64 3.14.9-11.el7.gemini
    provider: epics_module-slalib.i686 3.14.9-11.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-timelib.i686 3.15.1-0.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -1873,10 +1873,10 @@ package: epics_module-timelib.x86_64 3.15.1-0.el7.gemini
    provider: epics_module-slalib.x86_64 3.14.9-11.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-timelib-devel.i686 3.15.1-0.el7.gemini
   dependency: epics_module-slalib-devel
    provider: epics_module-slalib-devel.x86_64 3.14.9-11.el7.gemini
@@ -1886,10 +1886,10 @@ package: epics_module-timelib-devel.i686 3.15.1-0.el7.gemini
    provider: epics_module-timelib.i686 3.15.1-0.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: epics_module-timelib-devel.x86_64 3.15.1-0.el7.gemini
   dependency: epics_module-slalib-devel
    provider: epics_module-slalib-devel.x86_64 3.14.9-11.el7.gemini
@@ -1927,10 +1927,10 @@ package: f2Opc-ws.i686 2014A.1.0-0.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ffmpeg.x86_64 2008.10.03-1
   dependency: /usr/bin/pkg-config
    provider: pkgconfig.x86_64 1:0.27.1-4.el7
@@ -2046,10 +2046,10 @@ package: fglrx-x11-drv.x86_64 15.12-6.el7.elrepo
    provider: systemd.x86_64 219-62.el7_6.9
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: fglrx-x11-drv-32bit.x86_64 15.12-6.el7.elrepo
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -2151,10 +2151,10 @@ package: fpack.i686 3.370-1.el7.centos
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: fpsUi-ws.i686 1.0-2.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -2194,10 +2194,10 @@ package: funtools.i686 1.4.0-4.el7.centos
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: funtools-debuginfo.i686 1.4.0-4.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
@@ -2221,10 +2221,10 @@ package: funtools-devel.i686 1.4.0-4.el7.centos
    provider: tcl-devel.i686 1:8.5.13-8.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: funtools-libs.i686 1.4.0-4.el7.centos
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -2252,10 +2252,10 @@ package: funtools-libs.i686 1.4.0-4.el7.centos
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gcal-ws.i686 2.5-3.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -2484,10 +2484,10 @@ package: gemini-build.noarch 2-14.el7.gemini
    provider: yorick.x86_64 2.2.00x-4.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gemini-rpmtools.noarch 8-1.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -2627,10 +2627,10 @@ package: gemini-setup.i686 0.2-5.el7.gemini
    provider: gemini-top.i686 2-1.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gemini-top.i686 2-1.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -2640,10 +2640,10 @@ package: gemini-top.i686 2-1.el7.gemini
    provider: tcsh.x86_64 6.18.01-15.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gemini-vnc.i686 0.1-5.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -2654,10 +2654,10 @@ package: gemini-vnc.i686 0.1-5.el7.gemini
    provider: tigervnc-server.x86_64 1.8.0-13.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gemini-workstation.noarch 0-19.el7.gemini
   dependency: ImageMagick
    provider: ImageMagick.x86_64 6.7.8.9-16.el7_6
@@ -2864,10 +2864,10 @@ package: gemini-workstation-cp.i686 0-16.el7.gemini
    provider: ufflam2jec.x86_64 3.2-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gemini-workstation-mk.noarch 2.0-1.el7.gemini
   dependency: altair-ws
    provider: altair-ws.i686 2.0-13.el7.gemini
@@ -2949,10 +2949,10 @@ package: gmos-ws.i686 2017A.7.1-7.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gmosdc-ws.x86_64 2017A.6.5-3.el5.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -2986,10 +2986,10 @@ package: gnLaser-ws.i686 3.0-6.el7.gemini
    provider: gemini-runtime.noarch 1-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gnirs-ws.i686 1.4-18.el7.gemini
   dependency: /bin/echo
    provider: coreutils.x86_64 8.22-23.el7
@@ -3012,28 +3012,28 @@ package: gpiaocmetrics.x86_64 1.0.3-1
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gpicaltool.x86_64 1.0.4-1
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gpiet.x86_64 1.2.2-1
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: gpiisd.x86_64 1.7.1-1
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -3084,10 +3084,10 @@ package: gws-ws.i686 2.2-6.el7.gemini
    provider: gemini-runtime.noarch 1-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: hbs-ws.i686 1-19.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -3181,10 +3181,10 @@ package: isd.i686 2019A.1-5.el7.gemini
    provider: rsh.x86_64 0.17-79.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itcl.i686 3.4-10.el7.centos
   dependency: libc.so.6(GLIBC_2.4)
    provider: glibc.i686 2.17-260.el7_6.6
@@ -3196,10 +3196,10 @@ package: itcl.i686 3.4-10.el7.centos
    provider: tcl.i686 1:8.5.13-8.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itcl.x86_64 3.4-10.el7.centos
   dependency: libc.so.6(GLIBC_2.14)(64bit)
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -3219,28 +3219,28 @@ package: itcl-debuginfo.i686 3.4-10.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itcl-debuginfo.x86_64 3.4-10.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itcl-devel.i686 3.4-10.el7.centos
   dependency: itcl = 3.4-10.el7.centos
    provider: itcl.x86_64 3.4-10.el7.centos
    provider: itcl.i686 3.4-10.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itcl-devel.x86_64 3.4-10.el7.centos
   dependency: itcl = 3.4-10.el7.centos
    provider: itcl.x86_64 3.4-10.el7.centos
@@ -3293,26 +3293,26 @@ package: itk.x86_64 3.4-9.el7.centos
    provider: tk.i686 1:8.5.13-6.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itk-debuginfo.i686 3.4-9.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itk-debuginfo.x86_64 3.4-9.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: itk-devel.i686 3.4-9.el7.centos
   dependency: itk = 3.4-9.el7.centos
    provider: itk.x86_64 3.4-9.el7.centos
@@ -3329,10 +3329,10 @@ package: itk-devel.x86_64 3.4-9.el7.centos
    provider: itk.i686 3.4-9.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: java-1.7.0-openjdk.i686 1:1.7.0.65-2.5.1.2.el6_5
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -4158,10 +4158,10 @@ package: ltcss.i686 0.2-38.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ltcss-ws.i686 0.2-38.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -4215,10 +4215,10 @@ package: maskdb.x86_64 8.6.1-24.gemini
    provider: vsftpd.x86_64 3.0.2-25.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: mcs-ws.i686 3.0-13.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -4226,10 +4226,10 @@ package: mcs-ws.i686 3.0-13.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ngs2EngGui.x86_64 1.0-2.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -4399,10 +4399,10 @@ package: ocswish-devel.i686 6-0.el7.gemini
    provider: ocswish.i686 6-0.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: oiwfs-flam2-ws.i686 1.0-8.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -4457,10 +4457,10 @@ package: oiwfs-gnirs-ws.i686 1-4.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: oiwfs-ws.i686 2.2-4.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -4480,10 +4480,10 @@ package: ot.x86_64 2019B.1.1.1-0
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: pcs-ws.i686 2.4-0.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -4491,10 +4491,10 @@ package: pcs-ws.i686 2.4-0.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: pointing.i686 1.3-1.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -4557,10 +4557,10 @@ package: prm-ws.i686 3.0-18.el7.gemini
    provider: gemini-runtime.noarch 1-2.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: probesMap.i686 2-10.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -4583,10 +4583,10 @@ package: probesMap.i686 2-10.el7.gemini
    provider: wxPython.x86_64 2.8.12.0-9.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: procServ.i686 2.5.0p1-1el7
   dependency: libc.so.6(GLIBC_2.4)
    provider: glibc.i686 2.17-260.el7_6.6
@@ -4611,10 +4611,10 @@ package: procServ.i686 2.5.0p1-1el7
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: procServ-initd.i686 0.1-7el7
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -4622,18 +4622,18 @@ package: procServ-initd.i686 0.1-7el7
    Unsatisfied dependency
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: procServ-initd-debuginfo.i686 0.1-7el7
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: pwfs-ws.i686 1-0.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -4652,10 +4652,10 @@ package: pwfs1-ws.i686 4.9-3.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: pwfs2-ws.i686 4.11-3.el7.gemini
   dependency: /bin/csh
    provider: tcsh.x86_64 6.18.01-15.el7
@@ -4663,10 +4663,10 @@ package: pwfs2-ws.i686 4.11-3.el7.gemini
    provider: epics_extension-opiGEM.i686 1.0-8.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: pyephem-debuginfo.x86_64 3.7.3.4-1.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
@@ -4712,10 +4712,10 @@ package: python-ca.x86_64 4-1el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: qlplugins.i686 2012B.4.8-0.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -4731,10 +4731,10 @@ package: qpt.x86_64 2019B.1.1.1-0
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: qwt.x86_64 6.1.3-1
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -4873,10 +4873,10 @@ package: seqexec.noarch 2019B.5.6-0.el7.gemini
    provider: tclsoap.noarch 1.6.7-4.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: setwcs.i686 0.2-1.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -4909,10 +4909,10 @@ package: setwcs.i686 0.2-1.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: sfs-ws.i686 1.0-0.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -5004,10 +5004,10 @@ package: skycat.i686 3.1-2.el7.gemini
    provider: tkimg.i686 1.4.2-0.7.1.4.2svn.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: skycat-devel.i686 3.1-2.el7.gemini
   dependency: skycat
    provider: skycat.i686 3.1-2.el7.gemini
@@ -5051,10 +5051,10 @@ package: ssaTools.x86_64 2018A.1.1-22.el7.gemini
    provider: telnet.x86_64 1:0.17-64.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ssaTools.i686 2018A.1.1-23.el7.gemini
   dependency: /bin/bash
    provider: bash.x86_64 4.2.46-31.el7
@@ -5089,10 +5089,10 @@ package: ssaTools.i686 2018A.1.1-23.el7.gemini
    provider: telnet.x86_64 1:0.17-64.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: tbad.i686 1-16.el7.gemini
   dependency: /usr/bin/env
    provider: coreutils.x86_64 8.22-23.el7
@@ -5295,10 +5295,10 @@ package: tcs-ws.i686 9.11.6-1.el7.gemini
    provider: tkinter.x86_64 2.7.5-80.el7_6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: timeProbe.x86_64 1.0.0-4.el7.gemini
   dependency: epics-base(x86-64)
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
@@ -5321,10 +5321,10 @@ package: timeProbe.x86_64 1.0.0-4.el7.gemini
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: tkimg.i686 1.4.2-0.7.1.4.2svn.el7.centos
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -5353,10 +5353,10 @@ package: tkimg.i686 1.4.2-0.7.1.4.2svn.el7.centos
    provider: tcl.i686 1:8.5.13-8.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: tkimg.x86_64 1.4.2-0.7.1.4.2svn.el7.centos
   dependency: /sbin/ldconfig
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -5401,10 +5401,10 @@ package: tkimg-debuginfo.x86_64 1.4.2-0.7.1.4.2svn.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: tkimg-devel.i686 1.4.2-0.7.1.4.2svn.el7.centos
   dependency: libjpeg-devel
    provider: libjpeg-turbo-devel.x86_64 1.2.90-6.el7
@@ -5487,19 +5487,19 @@ package: ufflam2jec.x86_64 3.2-2.el7.gemini
    provider: ufjavaprotocol.x86_64 3.0-1.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ufflamcaj.x86_64 3.0-0.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: ufflamjre.x86_64 3.1-0.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7
@@ -5554,10 +5554,10 @@ package: wcstools.i686 3.7.0-1.el7.centos
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: wcstools-debuginfo.i686 3.7.0-1.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
@@ -5571,10 +5571,10 @@ package: weatherAlarm.i686 0.4-23.el7.gemini
    provider: epics-base.i686 3.14.12-26.el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: weatherAlarm.x86_64 0.4-24.el7.gemini
   dependency: epics-base(x86-64)
    provider: epics-base.x86_64 3.14.12-26.el7.gemini
@@ -5600,18 +5600,18 @@ package: xpa.i686 2.1.15-5.el7.centos
    provider: xpa-libs.i686 2.1.15-5.el7.centos
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: xpa-debuginfo.i686 2.1.15-5.el7.centos
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: xpa-devel.i686 2.1.15-5.el7.centos
   dependency: libtclxpa.so.1
    provider: xpa-tcl.i686 2.1.15-5.el7.centos
@@ -5638,10 +5638,10 @@ package: xpa-libs.i686 2.1.15-5.el7.centos
    provider: glibc.i686 2.17-260.el7_6.6
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: xpa-tcl.i686 2.1.15-5.el7.centos
   dependency: libc.so.6(GLIBC_2.15)
    provider: glibc.i686 2.17-260.el7_6.6
@@ -5745,18 +5745,18 @@ package: yorick-imutil.x86_64 0.5.5-3
    provider: yorick-yutils.x86_64 1.5.0-1el7.gemini
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: yorick-imutil-debuginfo.x86_64 0.5.5-3
   No dependencies for this package
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: yorick-usleep.x86_64 0.1.01-3el7.gemini
   dependency: libc.so.6(GLIBC_2.2.5)(64bit)
    provider: glibc.x86_64 2.17-260.el7_6.6
@@ -5837,10 +5837,10 @@ package: yorick-z.x86_64 1.2-2el7.gemini
    provider: zlib.i686 1.2.7-18.el7
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 package: zeromq-ngs2.x86_64 3.2.2-1.el7.gemini
   dependency: /bin/sh
    provider: bash.x86_64 4.2.46-31.el7

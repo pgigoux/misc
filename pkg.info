@@ -35,10 +35,10 @@ Description : Package ag-ws provides the workstation software for the module ag
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : agSeq-ws
 Arch        : i686
@@ -191,10 +191,10 @@ Description : Package caqtdm-run installs the runtime support to display caQtDM
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : cfitsio
 Arch        : i686
@@ -217,10 +217,10 @@ Description : CFITSIO is a library of C and FORTRAN subroutines for reading and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : cfitsio-debuginfo
 Arch        : i686
@@ -237,10 +237,10 @@ Description : This package provides debug information for package cfitsio.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : cfitsio-debuginfo
 Arch        : x86_64
@@ -321,10 +321,10 @@ Description : Static cfitsio library; avoid use if possible.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : crcs-ws
 Arch        : i686
@@ -338,10 +338,10 @@ Description : Package crcs-ws provides the DM screens for the module crcs.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : css
 Arch        : x86_64
@@ -374,10 +374,10 @@ Description : Package cssapp installs the css-workspace containing the Laser
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : cssapp
 Arch        : i686
@@ -428,10 +428,10 @@ Description :
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-QlServer
 Arch        : i686
@@ -498,10 +498,10 @@ Description : This is a default description for the dhs-config-ins-MK package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-config-wfs-CP
 Arch        : noarch
@@ -515,10 +515,10 @@ Description : This is a default description for the dhs-config-wfs-CP package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-config-wfs-MK
 Arch        : noarch
@@ -549,10 +549,10 @@ Description : This is a default description for the dhs-config-ws-CP package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-config-ws-MK
 Arch        : noarch
@@ -566,10 +566,10 @@ Description : This is a default description for the dhs-config-ws-MK package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-devel
 Arch        : i686
@@ -584,10 +584,10 @@ Description : dhs
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-libs
 Arch        : i686
@@ -602,10 +602,10 @@ Description : DHS common libraries.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : dhs-ws
 Arch        : i686
@@ -836,10 +836,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics-base-devel
 Arch        : i686
@@ -857,10 +857,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics-base-devel
 Arch        : x86_64
@@ -908,10 +908,10 @@ Loading mirror speeds from cached hostfile
  * updates: mirror.netglobalis.net
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_extension-StripTool
 Arch        : i686
@@ -1070,10 +1070,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_extensions-configure
 Arch        : i686
@@ -1093,10 +1093,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_extensions-configure
 Arch        : x86_64
@@ -1116,10 +1116,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_extensions-configure-devel
 Arch        : i686
@@ -1139,16 +1139,16 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-astlib
 Arch        : i686
@@ -1189,10 +1189,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-astlib-devel
 Arch        : i686
@@ -1211,10 +1211,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-astlib-devel
 Arch        : x86_64
@@ -1233,10 +1233,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-geminiRec
 Arch        : i686
@@ -1273,10 +1273,10 @@ Description : This package provides a backward compatible libts for older
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-libts-compat
 Arch        : x86_64
@@ -1325,10 +1325,10 @@ Description : This package provides the header needed to compile against libts.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-pyEpics
 Arch        : x86_64
@@ -1343,10 +1343,10 @@ Description : EPICS channel access client wrapper for python.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-slalib
 Arch        : i686
@@ -1365,10 +1365,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-slalib
 Arch        : x86_64
@@ -1453,10 +1453,10 @@ Description : EPICS is a set of Open Source software tools, libraries and
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : epics_module-timelib
 Arch        : x86_64
@@ -1686,10 +1686,10 @@ Description : This package provides debug information for package funtools.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : funtools-devel
 Arch        : i686
@@ -1705,10 +1705,10 @@ Description : These are the header files and libraries needed to develop a
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : funtools-libs
 Arch        : i686
@@ -1742,10 +1742,10 @@ Description : Package gcal-ws provides the DM screens for the module gcal.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gea
 Arch        : x86_64
@@ -1759,10 +1759,10 @@ Description : This is a default description for the gea package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gemini-build
 Arch        : noarch
@@ -1795,10 +1795,10 @@ Description : Tools for creating and handling rpm files for the Gemini
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gemini-runtime
 Arch        : noarch
@@ -1868,10 +1868,10 @@ Description : This is a default description for the gemini-vnc package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gemini-workstation
 Arch        : noarch
@@ -1924,10 +1924,10 @@ Description : The gemini-workstation-mk package is a meta package for all the
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gis-ws
 Arch        : i686
@@ -1941,10 +1941,10 @@ Description : Package gis-ws provides the DM screens for the module gis.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gmos-ws
 Arch        : i686
@@ -1958,10 +1958,10 @@ Description : Package gmos-ws provides the DM screens for the module gmos.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gmosdc-ws
 Arch        : x86_64
@@ -1975,10 +1975,10 @@ Description : Package gmosdc-ws provides the DM screens for the module gmosdc.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gnLaser-ws
 Arch        : i686
@@ -1993,10 +1993,10 @@ Description : Package gnLaser-ws provides the workstation support for the module
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gnirs-ws
 Arch        : i686
@@ -2010,10 +2010,10 @@ Description : Package gnirs-ws provides the DM screens for the module gnirs.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gpiaocmetrics
 Arch        : x86_64
@@ -2028,10 +2028,10 @@ Description : GPI AOC Metrics
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gpicaltool
 Arch        : x86_64
@@ -2046,10 +2046,10 @@ Description : GPI CAL Tool
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gpiet
 Arch        : x86_64
@@ -2064,10 +2064,10 @@ Description : GPI Engineering Tool
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gpiisd
 Arch        : x86_64
@@ -2082,10 +2082,10 @@ Description : GPI Instrument Status Display
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gpioiwfsdisplay
 Arch        : x86_64
@@ -2100,10 +2100,10 @@ Description : GPI OIWFS Display Tool
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gsaoi-ws
 Arch        : i686
@@ -2118,10 +2118,10 @@ Description : Package gsaoi-ws provides the workstation support for the module
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : gws-ws
 Arch        : i686
@@ -2136,10 +2136,10 @@ Description : Package gws-ws provides the workstation support for the module
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : hbs-ws
 Arch        : i686
@@ -2153,10 +2153,10 @@ Description : Package hbs-ws provides the DM screens for the module hbs.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : hrwfs-ws
 Arch        : i686
@@ -2170,10 +2170,10 @@ Description : Package hrwfs-ws provides the DM screens for the module hrwfs.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : idl
 Arch        : i686
@@ -2204,10 +2204,10 @@ Description : This is a default description for the iqtool package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : iroiwfs-ws
 Arch        : i686
@@ -2222,10 +2222,10 @@ Description : Package iroiwfs-ws provides the workstation support for the module
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : isd
 Arch        : i686
@@ -2239,10 +2239,10 @@ Description : Package isd provides the ISD interfaces for each instrument
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itcl
 Arch        : i686
@@ -2258,10 +2258,10 @@ Description : [incr Tcl] is Tcl extension that provides object-oriented features
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itcl
 Arch        : x86_64
@@ -2277,10 +2277,10 @@ Description : [incr Tcl] is Tcl extension that provides object-oriented features
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itcl-debuginfo
 Arch        : i686
@@ -2297,10 +2297,10 @@ Description : This package provides debug information for package itcl.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itcl-debuginfo
 Arch        : x86_64
@@ -2317,10 +2317,10 @@ Description : This package provides debug information for package itcl.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itcl-devel
 Arch        : i686
@@ -2353,10 +2353,10 @@ Description : Development headers and libraries for linking against itcl.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itk
 Arch        : i686
@@ -2373,10 +2373,10 @@ Description : [incr Tk] is Tk extension that provides object-oriented features
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itk
 Arch        : x86_64
@@ -2393,10 +2393,10 @@ Description : [incr Tk] is Tk extension that provides object-oriented features
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itk-debuginfo
 Arch        : i686
@@ -2413,10 +2413,10 @@ Description : This package provides debug information for package itk.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itk-debuginfo
 Arch        : x86_64
@@ -2451,10 +2451,10 @@ Description : Development headers and libraries for linking against itk.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : itk-devel
 Arch        : x86_64
@@ -2490,10 +2490,10 @@ Description : The OpenJDK runtime environment.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : kmod-fglrx
 Arch        : x86_64
@@ -2509,10 +2509,10 @@ Description : This package provides the fglrx kernel module(s) built
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : lgsao
 Arch        : noarch
@@ -2544,10 +2544,10 @@ Description : Package lhx-ws provides the DM screens for the GN Toptica Laser
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : libwcs
 Arch        : i686
@@ -2617,10 +2617,10 @@ Description : ltcss Laser Traffic Control System Server IOC
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : ltcss-ws
 Arch        : i686
@@ -2651,10 +2651,10 @@ Description : maskdb Mask Tracking Database System
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : mcs-ws
 Arch        : i686
@@ -2775,10 +2775,10 @@ Description : Package oiwfs-flam2-ws provides the workstation support for the
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : oiwfs-gmos-ws
 Arch        : i386
@@ -2811,10 +2811,10 @@ Description : Package oiwfs-gmos-ws provides the workstation support for the
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : oiwfs-gnirs-ws
 Arch        : i686
@@ -2898,10 +2898,10 @@ Description : Pointing packages the tpoint, pcal and probefit pointing tools.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : pr-ws
 Arch        : i686
@@ -2990,10 +2990,10 @@ Description : procServ-initd is a set of init.d script to spawn procServ daemons
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : procServ-initd-debuginfo
 Arch        : i686
@@ -3027,10 +3027,10 @@ Description : Package pwfs-ws provides the DM screens for the module pwfs.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : pwfs1-ws
 Arch        : i686
@@ -3044,10 +3044,10 @@ Description : Package pwfs1-ws provides the DM screens for the module pwfs1.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : pwfs2-ws
 Arch        : i686
@@ -3099,10 +3099,10 @@ Description : EPICS channel access client wrapper for python.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : qlplugins
 Arch        : i686
@@ -3117,10 +3117,10 @@ Description : The qlplugins package provides plugins loaded by the dhsQlTool
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : qpt
 Arch        : x86_64
@@ -3175,10 +3175,10 @@ Description : Static libraries and header files for writing QWT applications.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : reo-ws
 Arch        : i686
@@ -3192,10 +3192,10 @@ Description : The package reo-ws provides the User Interface for the REO system.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : scs-ws
 Arch        : i686
@@ -3245,10 +3245,10 @@ Description :  setwcs is used to compute the WCS for Gemini instruments like
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : sfs-ws
 Arch        : i686
@@ -3262,10 +3262,10 @@ Description : Package sfs-ws provides the DM screens for the SFS module.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : skycalc
 Arch        : i686
@@ -3279,10 +3279,10 @@ Description : This is a default description for the skycalc package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : skycat
 Arch        : i686
@@ -3310,10 +3310,10 @@ Description : SkyCat is a tool that combines visualization of images and access
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : skycat-devel
 Arch        : i686
@@ -3328,10 +3328,10 @@ Description : The files to develop with skycat
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : ssaTools
 Arch        : x86_64
@@ -3362,10 +3362,10 @@ Description : This is a default description for the ssaTools package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tbad
 Arch        : i686
@@ -3379,10 +3379,10 @@ Description : This is a default description for the tbad package
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tcc
 Arch        : i686
@@ -3418,10 +3418,10 @@ Description : This package provides a DOM binding for Tcl.  It provides one of
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tcldom-devel
 Arch        : i686
@@ -3454,10 +3454,10 @@ Description : This package provides an optimized Tcl dom parser built with the
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tclsoap
 Arch        : noarch
@@ -3589,10 +3589,10 @@ Description : This package contains a collection of image format handlers for
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tkimg-debuginfo
 Arch        : i686
@@ -3648,10 +3648,10 @@ Description : This are the header files needed to develop a tkimg application
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tkimg-devel
 Arch        : x86_64
@@ -3667,10 +3667,10 @@ Description : This are the header files needed to develop a tkimg application
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : tlei-ws
 Arch        : i686
@@ -3685,10 +3685,10 @@ Description : Package tlei-ws provides the caQtDM screens for the Toptical Laser
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : ufflam2jec
 Arch        : x86_64
@@ -3722,10 +3722,10 @@ Description : This is the bundled JCA/CAJ for Java 1.8
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : ufflamjre
 Arch        : x86_64
@@ -3780,10 +3780,10 @@ Description : This is the application ufjavaprotocol. It provides the java libs
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : vii
 Arch        : i686
@@ -3821,10 +3821,10 @@ Description : Wcstools is a set of software utilities, written in C, which
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : wcstools-debuginfo
 Arch        : i686
@@ -3923,10 +3923,10 @@ Description : This package provides debug information for package xpa.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : xpa-devel
 Arch        : i686
@@ -3942,10 +3942,10 @@ Description : These are the header files and libraries needed to develop a xpa
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : xpa-libs
 Arch        : i686
@@ -3962,10 +3962,10 @@ Description : The XPA messaging system provides seamless communication between
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : xpa-tcl
 Arch        : i686
@@ -4079,10 +4079,10 @@ Description : This package provides debug information for package yorick-imutil.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : yorick-usleep
 Arch        : x86_64
@@ -4151,10 +4151,10 @@ Description : z for yorick.
 
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
- * base: mirror.netglobalis.net
+ * base: mirror.orbyta.com
  * epel: mirror.cedia.org.ec
- * extras: mirror.netglobalis.net
- * updates: mirror.netglobalis.net
+ * extras: mirror.orbyta.com
+ * updates: mirror.orbyta.com
 Available Packages
 Name        : zeromq-ngs2
 Arch        : x86_64
