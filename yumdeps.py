@@ -1,4 +1,6 @@
+import sys
 import logging
+from argparse import ArgumentParser
 
 # Keywords used to parse the package information file.
 # They are also used as indices in the package information dictionary.
@@ -18,6 +20,15 @@ KEY_DEP_LIST = [KEY_PACKAGE, KEY_DEPENDENCY, KEY_PROVIDER]
 
 # String use to initialize undefined strings
 UNDEFINED = 'undefined'
+
+# Output options
+OUT_TEXT = 'text'
+OUT_CSV = 'csv'
+OUT_WIKI = 'wiki'
+OUT_SUMMARY = OUT_TEXT + '|' + OUT_CSV + '|' + OUT_WIKI
+
+# Default input file name root
+DEFAULT_ROOT = 'pkg'
 
 
 class PkgDep:
@@ -55,7 +66,6 @@ class PkgDep:
     def add_dependency(self, pkg_name, dep_name):
         """
         Add dependency for a given package.
-
         :param pkg_name: package name
         :type pkg_name: str
         :param dep_name: dependency name
@@ -206,7 +216,7 @@ class PkgDep:
         else:
             raise ValueError('dependency ' + dep_name + ' for package ' + pkg_name + ' does not exist')
 
-    def exists(self, pkg_name):
+    def package_exists(self, pkg_name):
         """
         Check whether a package exists
         :param pkg_name:
@@ -214,6 +224,14 @@ class PkgDep:
         :rtype: bool
         """
         return pkg_name in self.pkg
+
+    def internal_dependency(self, pkg_name, dep_name):
+        found = False
+        for p_name, p_version in self.get_provider_list(pkg_name, dep_name):
+            if self.package_exists(p_name):
+                found = True
+                break
+        return found
 
     def print_packages_and_dependencies(self):
         """
@@ -232,7 +250,7 @@ class PkgDep:
             for dep_name in self.get_dependency_list(pkg_name):
                 print ' ' * 2 + dep_name
                 for p_name, p_version in self.get_provider_list(pkg_name, dep_name):
-                    flag = ' yes' if self.exists(p_name) else ' no'
+                    flag = ' yes' if self.package_exists(p_name) else ' no'
                     print ' ' * 4 + '[' + p_name + ', ' + p_version + ']' + flag
 
 
@@ -353,8 +371,6 @@ def parse_dep_file(f, dep):
     :param f: dependency file
     :type f: file
     :param dep: package/dependency object
-    :type dep: Dep
-    :param dep: package/dependency object
     :type dep: PkgDep
     :return: updated package/dependency object
     :rtype: PkgDep
@@ -401,7 +417,145 @@ def parse_files(info_file_name, dep_file_name):
     return dep
 
 
+def output_text(dep, print_all):
+    """
+    Print package dependencies in plain text format. This is very similar to the output
+    from print_packages_and_dependencies, but here not internal dependencies are
+    filtered out.
+    :param dep: package/dependency object
+    :type dep: PkgDep
+    :param print_all: dependencies
+    :type print_all: bool
+    :return: None
+    """
+    print '\n' + '-' * 80
+    for pkg_name in sorted(dep.pkg):
+        print 'Package {} [{}] [{}] [{}] [{}] [{}]'.format(pkg_name,
+                                                           dep.get_version(pkg_name),
+                                                           dep.get_release(pkg_name),
+                                                           dep.get_arch(pkg_name),
+                                                           dep.get_repository(pkg_name),
+                                                           dep.get_summary(pkg_name))
+        for dep_name in dep.get_dependency_list(pkg_name):
+            if not print_all and not dep.internal_dependency(pkg_name, dep_name):
+                continue
+            print ' ' * 2 + dep_name
+            for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
+                flag = ' [internal]' if dep.package_exists(p_name) else ''
+                print ' ' * 4 + '[' + p_name + ', ' + p_version + ']' + flag
+
+
+def output_csv(dep, print_all):
+    """
+    Print package dependencies in plain csv format, one dependency per line.
+    Non internal dependencies are filtered out.
+    :param dep: package/dependency object
+    :type dep: PkgDep
+    :param print_all: dependencies
+    :type print_all: bool
+    :return: None
+    """
+    print 'Package name,Version,Release,Architecture,Repository,Summary,Dependency,Providers... (*) internal provider'
+    for pkg_name in sorted(dep.pkg):
+        pkg_line = '{},{},{},{},{},{}'.format(pkg_name,
+                                              dep.get_version(pkg_name),
+                                              dep.get_release(pkg_name),
+                                              dep.get_arch(pkg_name),
+                                              dep.get_repository(pkg_name),
+                                              dep.get_summary(pkg_name).replace(',', ' '))
+
+        dep_list = dep.get_dependency_list(pkg_name)
+        if not print_all:
+            dep_list = [d for d in dep_list if dep.internal_dependency(pkg_name, d)]
+
+        if len(dep_list) == 0:
+            print pkg_line + ',---'
+            continue
+
+        for dep_name in dep_list:
+            line = pkg_line + ',' + dep_name
+            for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
+                flag = ',(*)' if dep.package_exists(p_name) else ','
+                line += ',' + p_name + ',' + p_version + flag
+            print line
+
+
+def output_wiki(dep, print_all):
+    """
+    Print package dependencies in plain WikiMedia format.
+    Non internal dependencies are filtered out.
+    :param dep: package/dependency object
+    :type dep: PkgDep
+    :param print_all: dependencies
+    :type print_all: bool
+    :return: None
+    """
+    print 'not implemented yet'
+
+# def output_csv1(dep, print_all):
+#     """
+#     :param dep: package/dependency object
+#     :type dep: PkgDep
+#     :param print_all: dependencies
+#     :type print_all: bool
+#     :return: None
+#     """
+#     print 'Package name, Version, Release, Architecture, Repository, Summary, Dependencies...'
+#     for pkg_name in sorted(dep.pkg):
+#         line = '{},{},{},{},{},{}'.format(pkg_name,
+#                                           dep.get_version(pkg_name),
+#                                           dep.get_release(pkg_name),
+#                                           dep.get_arch(pkg_name),
+#                                           dep.get_repository(pkg_name),
+#                                           dep.get_summary(pkg_name).replace(',', ' '))
+#         dep_list = dep.get_dependency_list(pkg_name)
+#         for dep_name in dep_list:
+#             if not print_all and not dep.internal_dependency(pkg_name, dep_name):
+#                 break
+#             else:
+#                 for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
+#                     flag = ',(*)' if dep.package_exists(p_name) else ','
+#                     line += ',' + p_name + ',' + p_version + flag
+#         print line
+
+
+def get_args(argv):
+    parser = ArgumentParser(epilog='')
+
+    parser.add_argument('-i', '--input-root',
+                        action='store',
+                        dest='input',
+                        default=DEFAULT_ROOT,
+                        help='Input file root name default=(' + DEFAULT_ROOT + ')')
+
+    parser.add_argument('-o', '--output-format',
+                        action='store',
+                        dest='output',
+                        choices=[OUT_TEXT, OUT_CSV, OUT_WIKI],
+                        default=OUT_TEXT,
+                        help='Output format default=(' + OUT_TEXT + ')')
+
+    parser.add_argument('-a', '--all',
+                        action='store_true',
+                        dest='all',
+                        default=False,
+                        help='Print all dependencies')
+
+    return parser.parse_args(argv[1:])
+
+
 if __name__ == '__main__':
+
+    args = get_args(sys.argv)
+    # print args
+
     logging.basicConfig(level=logging.ERROR)
-    p_dep = parse_files('pkg.info', 'pkg.dep')
-    p_dep.print_packages_and_dependencies()
+
+    p_dep = parse_files(args.input + '.info', args.input + '.dep')
+
+    if args.output == OUT_TEXT:
+        output_text(p_dep, args.all)
+    elif args.output == OUT_CSV:
+        output_csv(p_dep, args.all)
+    elif args.output == OUT_WIKI:
+        output_wiki(p_dep, args.all)
