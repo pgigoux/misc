@@ -1,3 +1,17 @@
+"""
+Find yum dependencies
+
+This program prints the list of dependencies of all packages listed in the 'pkg.info' file
+in three different output formats: text, csv, and wikimedia.
+
+The program reads the package information and package dependencies from two text files that
+are constructed using "yum list", "yum info" and "yum deplist". A shell script is used to
+automate this process and also to restrict the repositories to look for packages.
+
+The original idea was to call the yum API directly, but the API is not documented and could
+change at any time. Running yum directly from this program also didn't work because it interfered
+with the yum package dependencies. Parsing the yum output was the simplest approach.
+"""
 import sys
 import logging
 from argparse import ArgumentParser
@@ -21,6 +35,9 @@ KEY_DEP_LIST = [KEY_PACKAGE, KEY_DEPENDENCY, KEY_PROVIDER]
 # String use to initialize undefined strings
 UNDEFINED = 'undefined'
 
+# String used to flag internal packages and dependencies
+INTERNAL = '[internal]'
+
 # Output options
 OUT_TEXT = 'text'
 OUT_CSV = 'csv'
@@ -32,6 +49,30 @@ DEFAULT_ROOT = 'pkg'
 
 
 class PkgDep:
+    """
+    This class is used to encapsulate all the details how the package/dependency information
+    is stored in memory.
+
+    The package and dependency information is stored two dictionaries. Both dictionaries are
+    indexed by the package name followed by the architecture separated by a dot (e.g. VDCT.i686).
+    This is to ensure a unique key is used to access elements in both dictionaries.
+
+    The "pkg" dictionary is used to store information about the package itself. Each dictionary
+    entry is a six element tuple containing the package name, architecture, version number (or string),
+    release number (or string), repository (e.g. gemini-production/7/x86_64) and summary.
+    The summary will be truncated if it uses more than one line.
+
+    The "dep" dictionary is used to store the dependency information for each package. Each dictionary
+    entry is a dictionary indexed by the dependency name (e.g. cfitsio). The list will be empty if the
+    package has no dependencies.
+
+    Each dependency entry will contain a list of providers, and each provider will be described
+    by a two element tuple containing the provider name and architecture. The provider name follows
+    the same naming convention as "pkg" and "dep" keys.
+
+    Packages listed in the "pkg" dictionary are considered "internal". Dependencies containing at
+    least one provider listed in the "pkg" dictionary are also considered "internal".
+    """
 
     def __init__(self):
         self.pkg = {}
@@ -216,7 +257,7 @@ class PkgDep:
         else:
             raise ValueError('dependency ' + dep_name + ' for package ' + pkg_name + ' does not exist')
 
-    def package_exists(self, pkg_name):
+    def internal_package(self, pkg_name):
         """
         Check whether a package exists
         :param pkg_name:
@@ -228,10 +269,30 @@ class PkgDep:
     def internal_dependency(self, pkg_name, dep_name):
         found = False
         for p_name, p_version in self.get_provider_list(pkg_name, dep_name):
-            if self.package_exists(p_name):
+            if self.internal_package(p_name):
                 found = True
                 break
         return found
+
+    def package_count(self):
+        for p in sorted(self.pkg):
+            print p
+        return len(self.pkg)
+
+    def dependency_count(self, pkg_name):
+        if pkg_name in self.dep:
+            return len(self.dep[pkg_name])
+        else:
+            raise ValueError('package ' + pkg_name + ' does not exist')
+
+    def provider_count(self, pkg_name, dep_name):
+        if pkg_name in self.dep:
+            if dep_name in self.dep[pkg_name]:
+                return len(self.dep[pkg_name][dep_name])
+            else:
+                raise ValueError('package ' + pkg_name + ' does not exist')
+        else:
+            raise ValueError('dependency ' + dep_name + ' for package ' + pkg_name + ' does not exist')
 
     def print_packages_and_dependencies(self):
         """
@@ -250,7 +311,7 @@ class PkgDep:
             for dep_name in self.get_dependency_list(pkg_name):
                 print ' ' * 2 + dep_name
                 for p_name, p_version in self.get_provider_list(pkg_name, dep_name):
-                    flag = ' yes' if self.package_exists(p_name) else ' no'
+                    flag = ' yes' if self.internal_package(p_name) else ' no'
                     print ' ' * 4 + '[' + p_name + ', ' + p_version + ']' + flag
 
 
@@ -360,6 +421,10 @@ def parse_info_file(f, dep):
             logging.debug('  found summary ' + name)
             pkg_summary = name
 
+    # Output the last package
+    dep.add_package(pkg_name + '.' + pkg_arch, pkg_arch, pkg_version,
+                    pkg_release, pkg_repository, pkg_summary)
+
     return dep
 
 
@@ -428,7 +493,6 @@ def output_text(dep, print_all):
     :type print_all: bool
     :return: None
     """
-    print '\n' + '-' * 80
     for pkg_name in sorted(dep.pkg):
         print 'Package {} [{}] [{}] [{}] [{}] [{}]'.format(pkg_name,
                                                            dep.get_version(pkg_name),
@@ -441,7 +505,7 @@ def output_text(dep, print_all):
                 continue
             print ' ' * 2 + dep_name
             for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
-                flag = ' [internal]' if dep.package_exists(p_name) else ''
+                flag = ' ' + INTERNAL if dep.internal_package(p_name) else ''
                 print ' ' * 4 + '[' + p_name + ', ' + p_version + ']' + flag
 
 
@@ -475,7 +539,7 @@ def output_csv(dep, print_all):
         for dep_name in dep_list:
             line = pkg_line + ',' + dep_name
             for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
-                flag = ',(*)' if dep.package_exists(p_name) else ','
+                flag = ',(*)' if dep.internal_package(p_name) else ','
                 line += ',' + p_name + ',' + p_version + flag
             print line
 
@@ -491,32 +555,6 @@ def output_wiki(dep, print_all):
     :return: None
     """
     print 'not implemented yet'
-
-# def output_csv1(dep, print_all):
-#     """
-#     :param dep: package/dependency object
-#     :type dep: PkgDep
-#     :param print_all: dependencies
-#     :type print_all: bool
-#     :return: None
-#     """
-#     print 'Package name, Version, Release, Architecture, Repository, Summary, Dependencies...'
-#     for pkg_name in sorted(dep.pkg):
-#         line = '{},{},{},{},{},{}'.format(pkg_name,
-#                                           dep.get_version(pkg_name),
-#                                           dep.get_release(pkg_name),
-#                                           dep.get_arch(pkg_name),
-#                                           dep.get_repository(pkg_name),
-#                                           dep.get_summary(pkg_name).replace(',', ' '))
-#         dep_list = dep.get_dependency_list(pkg_name)
-#         for dep_name in dep_list:
-#             if not print_all and not dep.internal_dependency(pkg_name, dep_name):
-#                 break
-#             else:
-#                 for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
-#                     flag = ',(*)' if dep.package_exists(p_name) else ','
-#                     line += ',' + p_name + ',' + p_version + flag
-#         print line
 
 
 def get_args(argv):
@@ -539,7 +577,7 @@ def get_args(argv):
                         action='store_true',
                         dest='all',
                         default=False,
-                        help='Print all dependencies')
+                        help='Print all dependencies (default=False)')
 
     return parser.parse_args(argv[1:])
 
