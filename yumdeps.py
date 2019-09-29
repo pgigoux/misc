@@ -609,7 +609,7 @@ def output_wiki(dep, print_all):
     """
     # Header
     print '{| class="wikitable"'
-    print '! Package || Version|| Dependency || Providers || Version || Repository'
+    print '! # || Package || Version|| Repository || Dependency || Provider || Version'
     print '|-'
 
     # Compute the number of rows per package.
@@ -622,18 +622,23 @@ def output_wiki(dep, print_all):
             row_span[pkg_name] += dep.provider_count(pkg_name, dep_name)
         row_span[pkg_name] = max(row_span[pkg_name], 1)
 
+    pkg_count = 1
     for pkg_name in sorted(dep.pkg):
 
-        # Print package name and architecture. The row span should be the same for both.
-        print '| rowspan="' + str(row_span[pkg_name]) + '" | ' + pkg_name
+        # Print package name and architecture.
+        # The row span should be the same for both.
+        # The anchor to the package entry is included at this point.
+        print '| rowspan="' + str(row_span[pkg_name]) + '" | ' + str(pkg_count)
+        print '| rowspan="' + str(row_span[pkg_name]) + '" | ' + '<span id="' + pkg_name + '">' + pkg_name + '</span>'
         print '| rowspan="' + str(row_span[pkg_name]) + '" | ' + dep.get_version(pkg_name)
+        print '| rowspan="' + str(row_span[pkg_name]) + '" | ' + dep.get_repository(pkg_name)
+        pkg_count += 1
 
         # Get the (effective) dependency list for the current package.
         # Print default output for a package with no dependencies.
         dep_list = get_dep_list(dep, pkg_name, print_all)
         len_dep_list = len(dep_list)
         if len_dep_list == 0:
-            print '| ---'
             print '| ---'
             print '| ---'
             print '| ---'
@@ -647,13 +652,10 @@ def output_wiki(dep, print_all):
         for dep_name in dep_list:
             print '| rowspan="' + str(dep.provider_count(pkg_name, dep_name)) + '" | ' + dep_name
             for p_name, p_version in dep.get_provider_list(pkg_name, dep_name):
-                try:
-                    p_repo = dep.get_repository(p_name)
-                except ValueError:
-                    p_repo = '---'
+                if dep.internal_package(p_name):
+                    p_name = '[[#' + p_name + '|' + p_name + ']]'
                 print '| ' + p_name
                 print '| ' + p_version
-                print '| ' + p_repo
                 print '|-'
 
     print '|}'
