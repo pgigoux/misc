@@ -1,22 +1,32 @@
-# Project list. The purpose of this list is to define the valid project names that
-# can appear are expected in the input workbook. It is also used to specify the order
-# in which the projects should appear in the output spreadsheet. The number of projects
-# listed here can be more than the ones currently active.
-Time off > Administrative
-Time off > Sick
-Time off > Holiday
-Time off > Leave
-Time off > Vacation
+# Project list. The purpose of this list is to define the project names that are expected in
+# the input workbook. It is also used to specify the order in which they should appear in the
+# output spreadsheet to match the order in the web time cards. It doesn’t hurt if there are
+# more projects than there are actually active in the time card.
 Core > Day Time Operations
 Core > Fault resolution
-Core > Software releases
-Misc > Administration
-Misc > PIO
-Misc > Training
-Projects > BFO
-Projects > GemOps Improvements
-Projects > GRACES
-Projects > NGS2
-Projects > RT Upgrades
-Projects > GNAO > GNAO RTC
-Projects > GNAO > GNAO non RTC
+Projects > GNAO  SyCo GR120001
+Projects > GNAO RTC GR120003
+Misc > ES-SW Training
+Time off > Holiday
+
+# Time off > Administrative
+# Time off > Sick
+# Time off > Holiday
+# Time off > Leave
+# Time off > Vacation
+# Core > Day Time Operations
+# Core > Fault resolution
+# Core > Software releases
+# Core > Operations Improvements
+# Projects > GNAO  SyCo GR120001
+# Projects > GNAO RTC GR120003
+# Misc > Administration
+# Misc > PIO
+# Misc > Training
+# Projects > NGS2
+# Projects > GNAO non RTC
+# Projects > GNAO RTC
+# Projects > BFO
+# Projects > GemOps Improvements
+# Projects > GRACES
+# Projects > RT Upgrades

@@ -1,10 +1,10 @@
 import sys
 import re
-import datetime as dt
-from argparse import ArgumentParser, SUPPRESS
+from typing import Any
+from argparse import ArgumentParser, SUPPRESS, Namespace
 import pandas as pd
 from math import modf
-from numpy import float64
+from numpy import int64, float64
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment
 
@@ -33,17 +33,13 @@ NON_INPUT_DATA_COLUMNS = [COL_PROJECT_PATH, COL_TOTAL_HOURS, COL_TOTALS, COL_ERR
 FONT_NAME = 'Liberation Sans'
 
 
-def dump_data(df, label='', print_types=False):
+def dump_data(df: pd.DataFrame, label='', print_types=False):
     """
     Print the contents of a pandas DataFrame on the screen.
     Used for testing purposes.
     :param df: pandas data frame
-    :type df: pd.DataFrame
     :param label: label to print in output header
-    :type label: str
     :param print_types: print data types along with values
-    :type print_types: bool
-    :return: None
     """
     assert (isinstance(df, pd.DataFrame))
     aux = '-- ' + label + ' ' if label else ''
@@ -64,7 +60,7 @@ def dump_data(df, label='', print_types=False):
     print()
 
 
-def closest_number(x):
+def closest_number(x: Any):
     """
     Return the closest real to a given number whose fractional part is either 0, 0.25, 0.5 or 0.75.
     :param x: number to approximate
@@ -87,27 +83,29 @@ def closest_number(x):
     return xt, dx
 
 
-def read_project_list(file_name):
-    lst = []
+def read_project_list(file_name: str) -> list:
+    """
+    Read the contents of the file with the list of valid projects.
+    :param file_name: project list file name
+    :return: list of projects
+    """
+    output_list = []
     f = open(file_name, 'r')
     for line in f:
         line = line.strip()
         if not re.search('^#', line) or len(line) == 0:
             # print(line)
-            lst.append(line)
+            output_list.append(line)
     # print(lst)
-    return lst
+    return output_list
 
 
-def check_projects(df, project_list):
+def check_projects(df: pd.DataFrame, project_list: list) -> bool:
     """
     Make sure that all the projects in the data frame are named in the master project list.
     :param df: data frame
-    :type df: pd.DataFrame
     :param project_list: list of valid projects
-    :type project_list: list
     :return: False if a project is not in the master list, False otherwise
-    :rtype: bool
     """
     assert (isinstance(df, pd.DataFrame))
     ok = True
@@ -119,7 +117,7 @@ def check_projects(df, project_list):
     return ok
 
 
-def read_excel_file(file_name):
+def read_excel_file(file_name: str) -> pd.DataFrame:
     """
     Read Excel spreadsheet into a Pandas data frame
     :param file_name: spreadsheet file name
@@ -142,33 +140,27 @@ def read_excel_file(file_name):
     return df_out[0:index + 1]
 
 
-def convert_values(df):
+def convert_values(df: pd.DataFrame) -> pd.DataFrame:
     """
     Convert hh:mm data to decimal, making sure that times bigger than 24 hours are handled correctly.
-    Convert all numeric cells to float data.
+    Convert all numeric cells to int64 or float64 data.
     :param df: data frame
-    :type df: pd.DataFrame
     :return: converted data frame
-    :rtype: pd.DataFrame
     """
     assert (isinstance(df, pd.DataFrame))
 
     # Make a copy of the data frame so the original is left untouched
     df_out = df.copy(deep=True)
 
-    # First convert datetime objects to decimal time
     for row_index, _ in df_out.iterrows():
         for col_name in df_out.keys():
             value = df_out.at[row_index, col_name]
-            if isinstance(value, dt.time):
-                # print('found time', value, value.hour)
-                result = value.hour + value.minute / 60.0 + value.second / 3600.0
+            try:
+                h, m = map(int, str(value).split(':'))
+                result = h + m / 60.0
                 df_out.at[row_index, col_name] = result
-            elif isinstance(value, dt.datetime):  # times greater than 24 hours
-                # print('found datetime', value)
-                result = value.day * 24 + value.hour + value.minute / 60.0 + value.second / 3600.0
-                # print('----', result)
-                df_out.at[row_index, col_name] = result
+            except ValueError:
+                pass
 
     # Then convert all columns (except for the project name/path) to the same data type
     # (should be numpy.float64)
@@ -179,34 +171,31 @@ def convert_values(df):
     return df_out
 
 
-def rename_columns(df):
+def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Rename date of the week, which originally are of the form 'dow yyyy-mm-dd', to just the day.
+    Rename date of the week, which originally are of the form 'dow yyyy-mm-dd', to 'dow day'.
     Also rename the column 'Total Hours' to 'Totals'
     :param df: input data frame
-    :type df: pd.DataFrame
     :return: converted data frame
-    :rtype: pd.DataFrame
     """
     assert (isinstance(df, pd.DataFrame))
     d = {COL_TOTAL_HOURS: COL_TOTALS}
     for col in df.keys():
-        # print(col)
         if col not in NON_INPUT_DATA_COLUMNS:
-            d[col] = re.sub('... ....-..-', '', col)
+            day_of_week, rest = col.split()
+            day = rest.split('/')[0]
+            d[col] = day_of_week + ' ' + day
     df_out = df.rename(columns=d)
     return df_out
 
 
-def round_data(df):
+def round_data(df: pd.DataFrame) -> pd.DataFrame:
     """
     Round time data to the nearest 15 minute boundary (x.0 x.25, xx.5, x.75).
     The rounding errors are recorded into the (new) 'Errors' column.
     The row and column totals become inconsistent after this point.
     :param df: input data frame
-    :type df: pd.DataFrame
     :return: converted data frame
-    :rtype: pd.DataFrame
     """
     assert (isinstance(df, pd.DataFrame))
 
@@ -229,14 +218,12 @@ def round_data(df):
     return df_out
 
 
-def recalculate_totals(df):
+def recalculate_totals(df: pd.DataFrame) -> pd.DataFrame:
     """
     Recalculate the row and column totals. This funtion should be called
     after calling round_data so the totals are consistent with the data.
     :param df: input data frame
-    :type df: pd.DataFrame
     :return: converted data frame
-    :rtype: pd.DataFrame
     """
     assert (isinstance(df, pd.DataFrame))
 
@@ -280,20 +267,18 @@ def recalculate_totals(df):
     # Update total hours for period
     df_out.at[row_index, COL_TOTALS] = big_total
 
-    # print(big_total)
-    # print(col_total)
-
     return df_out
 
 
-def convert_value(value):
+def convert_value(value: Any) -> Any:
     """
     Converts numpy.float64 values to float and replaces zero data with a '-'.
     All other data types are left unchanged.
     :param value: input value
     :return: converted value
     """
-    if isinstance(value, float64):
+    # print('convert value', value, type(value))
+    if isinstance(value, float64) or isinstance(value, int64):
         output_value = float(value)
         if abs(output_value) < 0.0001:
             output_value = '-'
@@ -303,16 +288,13 @@ def convert_value(value):
     return output_value
 
 
-def get_row_and_index(df, name):
+def get_row_and_index(df: pd.DataFrame, name: str) -> tuple:
     """
     Auxiliary function that returns the row and the row index for the row where COL_PROJECT_PATH matches a given name.
     Provided to prevent code redundancy in the program.
     :param df: data frame
-    :type df: pd.DataFrame
     :param name: name to match
-    :type name: str
     :return: row and row index
-    :rtype: tuple
     """
     assert (isinstance(df, pd.DataFrame))
     row = df.loc[df[COL_PROJECT_PATH] == name]
@@ -320,27 +302,25 @@ def get_row_and_index(df, name):
     return row, row_index
 
 
-def get_row_columns(df, row_index, output_row_index, column_names):
+def get_row_columns(df: pd.DataFrame, row_index: int, output_row_index: int, column_names: list) -> list:
     """
     Return the column values for a given row index. The output row index will be used
     when calculating the formulas since the order of rows in the output spreadsheet is
     not necessarily the same as the order of rows in the input data. The formula will
     be empty if the output
-    :type df: pd.DataFrame
+    :param df: data frame
     :param column_names: list of column names
     :param row_index: row index (zero indexed)
-    :type row_index: int
     :param output_row_index: output row index (used in formulas)
-    :type output_row_index: int
     :return: list of column values for the row
-    :rtype: list
     """
     n = 0
     column_values = []
     for col_name in column_names:
         if col_name == COL_FORMULAS:
             if output_row_index is not None:
-                value = '=sum(B' + str(output_row_index + 2) + ':' + excel_column_name(n - 2) + str(output_row_index + 2) + ')'
+                value = '=sum(B' + str(output_row_index + 2) + ':' + excel_column_name(n - 2) + str(
+                    output_row_index + 2) + ')'
             else:
                 value = ''
         else:
@@ -350,13 +330,11 @@ def get_row_columns(df, row_index, output_row_index, column_names):
     return column_values
 
 
-def excel_column_name(column_number):
+def excel_column_name(column_number: int) -> str:
     """
     Convert a zero-indexed column number into an Excel column name.
     :param column_number: column number (zero indexed)
-    :type column_number: int
     :return: column name
-    :rtype: str
     """
     assert (isinstance(column_number, int))
     column_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
@@ -375,16 +353,12 @@ def excel_column_name(column_number):
     return col_name
 
 
-def write_excel_file(df, project_list, file_name):
+def write_excel_file(df: pd.DataFrame, project_list: list, file_name: str):
     """
     Write data to spreadsheet file
     :param df: data frame
-    :type df: pd.DataFrame
     :param project_list: list of valid projects
-    :type project_list: list
     :param file_name: output file name
-    :type file_name: str
-    :return: None
     """
     assert (isinstance(df, pd.DataFrame))
 
@@ -422,7 +396,7 @@ def write_excel_file(df, project_list, file_name):
 
     # Append the row with the column totals
     row, row_index = get_row_and_index(df, ROW_TOTALS)
-    row_list = get_row_columns(df, row_index, None, column_titles)
+    row_list = get_row_columns(df, row_index, 0, column_titles)
     ws.append(row_list)
 
     # -- Formulas start here
@@ -495,13 +469,11 @@ def write_excel_file(df, project_list, file_name):
     wb.save(file_name)
 
 
-def get_args(argv):
+def get_args(argv: list) -> Namespace:
     """
     Process command line arguments
     :param argv: command line arguments from sys.argv
-    :type argv: list
     :return: arguments
-    :rtype: argparse.Namespace
     """
 
     parser = ArgumentParser()
@@ -519,15 +491,36 @@ def get_args(argv):
     return parser.parse_args(argv[1:])
 
 
+def read_csv_file(file_name):
+    df = pd.read_csv(file_name)
+
+    # Drop unused columns
+    df_out = df.drop(columns=UNNEEDED_COLUMNS)
+
+    # Look for the row containing the column totals
+    lst = df_out.index[df_out[COL_PROJECT_PATH] == ROW_TOTALS].tolist()
+    if len(lst) == 1:
+        index = lst[0]
+    else:
+        raise (ValueError, 'No totals')
+
+    # print(df_out[0:index + 1])
+    # return
+
+    # Only return rows up to the totals
+    return df_out[0:index + 1]
+
+
 if __name__ == '__main__':
 
     # Get command line arguments
     args = get_args(sys.argv)
-    # args = get_args(['ptimecard', 'example.xlsx'])
+    # args = get_args(['ptimecard', 'example.csv', '--debug'])
     input_file = args.file
-    output_file = 'Output_' + input_file
+    output_file = 'Output_' + str(input_file).replace('.csv', '') + '.xlsx'
     debug = args.debug
 
+    master_project_list = []  # to make pycharm happy
     try:
         master_project_list = read_project_list(PROJECT_FILE)
     except FileNotFoundError as e:
@@ -536,9 +529,9 @@ if __name__ == '__main__':
     if debug:
         print(master_project_list)
 
-    data_frame_excel = None  # to make PyCharm happy
+    data_frame_excel = None  # to make pycharm happy
     try:
-        data_frame_excel = read_excel_file(input_file)
+        data_frame_excel = read_csv_file(input_file)
     except Exception as e:
         print('Cannot open spreadsheet', e)
         exit(0)
