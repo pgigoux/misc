@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+. $HOME/.zshrc
+
+conda activate py35
+
+python /Users/pgigoux/PycharmProjects/git_misc/ptimecard.py "$@"
+
+conda deactivate
