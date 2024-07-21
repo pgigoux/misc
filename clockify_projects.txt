@@ -1,0 +1,21 @@
+# Admin
+ES admin Internal
+ES outreach and dei
+ES sw training
+# Core
+Day time operations
+Fault report resolution
+Software releases
+# Projects
+EPICS upgrades
+Gems in queue
+GNAO RTC
+GNAO Sysco
+GLAO
+# Time off
+Holiday
+Vacation
+Sick
+Sick-lic
+Special
+Administrative
