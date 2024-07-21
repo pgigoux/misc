@@ -4,6 +4,6 @@
 
 conda activate py35
 
-python /Users/pgigoux/PycharmProjects/git_misc/ptimecard.py "$@"
+python /Users/pgigoux/PycharmProjects/git_misc/ktimecard.py "$@"
 
 conda deactivate
