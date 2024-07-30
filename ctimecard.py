@@ -161,13 +161,13 @@ def get_args(argv: list) -> Namespace:
                         help='input csv file',
                         default='')
 
-    parser.add_argument('-f',
+    parser.add_argument('-1',
                         action='store_true',
                         dest='first_half',
                         help='first half of the month',
                         default=True)
 
-    parser.add_argument('-s',
+    parser.add_argument('-2',
                         action='store_false',
                         dest='first_half',
                         help='second half of the month',
