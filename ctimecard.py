@@ -6,6 +6,7 @@ import sys
 import pandas as pd
 from argparse import ArgumentParser, Namespace
 from openpyxl import Workbook
+from openpyxl.styles import Alignment
 # from openpyxl.styles import Font, Alignment
 from timecard import Totals, read_project_list, column_name
 
@@ -45,6 +46,8 @@ UNNEEDED_COLUMNS = [COL_CLIENT, COL_DESCRIPTION, COL_TASK, COL_USER, COL_GROUP,
                     COL_EMAIL, COL_TAGS, COL_BILLABLE, COL_START_TIME, COL_END_TIME,
                     COL_DURATION_DEC, COL_BILLABLE_RATE, COL_BILLABLE_AMOUNT]
 
+EMPTY_CELL = '-'
+
 
 def read_csv_file(file_name) -> pd.DataFrame:
     """
@@ -57,13 +60,14 @@ def read_csv_file(file_name) -> pd.DataFrame:
     return df_out
 
 
-def process_data(data: pd.DataFrame, project_list: list, first_half: bool) -> Totals:
+def process_data(data: pd.DataFrame, project_list: list, start_day: int, end_day: int) -> Totals:
     """
     Process the data in contained in a data frame. It returns a Totals object
     containing the processed data.
     :param data: time data
     :param project_list: project list
-    :param first_half: first half of the month?
+    :param start_day: starting day
+    :param end_day: ending day
     :return: Total object
     """
     output = Totals()
@@ -73,7 +77,7 @@ def process_data(data: pd.DataFrame, project_list: list, first_half: bool) -> To
         # print(index, project, start_date, end_date, hours)
         if project in project_list:
             if start_date == end_date:
-                output.add(project, start_date, hours, first_half)
+                output.add(project, start_date, hours, start_day, end_day)
             else:
                 raise ValueError(f'date mismatch for entry ({project}) {start_date}, {end_date}')
         else:
@@ -101,7 +105,6 @@ def write_timesheet(time_data: Totals, project_list: list,
     # Allocate two additional rows (column titles, totals, and formulas)
     # Allocate three additional columns (totals, formulas and errors)
     n_rows = len(time_data.get_project_list()) + 3
-    # n_cols = end_day - start_day + 3
 
     day_list = list(range(start_day, end_day + 1))
     len_day_list = len(day_list)
@@ -111,7 +114,6 @@ def write_timesheet(time_data: Totals, project_list: list,
     ws.append(column_titles)
 
     # Write rows with daily data
-    # project_row_index = 0
     row = 2
     for project_name in project_list:
         row_list = [project_name]
@@ -131,7 +133,7 @@ def write_timesheet(time_data: Totals, project_list: list,
     row_list.append(totals.get_total_time())
     ws.append(row_list)
 
-    # Write column formulas
+    # Write column with formulas
     row_list = [ROW_FORMULAS]
     for column in range(1, len(day_list) + 1):
         row_list.append('=sum(' + column_name(column) + '2:' +
@@ -142,6 +144,18 @@ def write_timesheet(time_data: Totals, project_list: list,
     row_list.append('=sum(' + column_name(len_day_list + 3) + '2:' +
                     column_name(len_day_list + 3) + str(n_rows - 2) + ')')
     ws.append(row_list)
+
+    # Replace data cells containing a zero value with a special marker
+    # Skip the rows and columns containing totals, errors or formulas
+    for row in range(1, ws.max_row - 1):
+        for col in range(1, ws.max_column - 2):
+            # print(row, col, ws.cell(row, col).value, type(ws.cell(row, col).value))
+            try:
+                if float(ws.cell(row, col).value) < 0.000001:
+                    ws.cell(row, col).value = EMPTY_CELL
+                    ws.cell(row, col).alignment = Alignment(horizontal='right')
+            except (ValueError, TypeError):
+                pass
 
     # Save output file
     wb.save(file_name)
@@ -161,17 +175,17 @@ def get_args(argv: list) -> Namespace:
                         help='input csv file',
                         default='')
 
-    parser.add_argument('-1',
-                        action='store_true',
-                        dest='first_half',
-                        help='first half of the month',
-                        default=True)
+    parser.add_argument('-s', '--start',
+                        action='store',
+                        dest='start_day',
+                        help='Starting day',
+                        default=1)
 
-    parser.add_argument('-2',
-                        action='store_false',
-                        dest='first_half',
-                        help='second half of the month',
-                        default=True)
+    parser.add_argument('-e', '--end',
+                        action='store',
+                        dest='end_day',
+                        help='Ending day',
+                        default=31)
 
     return parser.parse_args(argv[1:])
 
@@ -180,9 +194,16 @@ if __name__ == '__main__':
 
     # Get command line arguments
     args = get_args(sys.argv)
+    # args = get_args(['program', 'Timesheet20240815.csv', '-s', '1', '-e', '31'])
     input_file = str(args.file)
-    first_half = bool(args.first_half)
     output_file = 'Output_' + input_file.replace('.csv', '') + '.xlsx'
+    try:
+        starting_day = int(args.start_day)
+        ending_day = int(args.end_day)
+    except ValueError:
+        print('Bad starting or ending day')
+        exit(0)
+    print(f'Day range: [{starting_day}, {ending_day}]')
 
     # Read project list
     try:
@@ -191,7 +212,7 @@ if __name__ == '__main__':
         print('Project file not found', e)
         exit(0)
 
-    # Read clockify data
+    # Read clockify data into a pandas dataframe
     try:
         df = read_csv_file(input_file)
     except ValueError as e:
@@ -200,12 +221,7 @@ if __name__ == '__main__':
 
     # Process the data. The total time per day and project
     # is calculated at this point.
-    totals = process_data(df, master_project_list, first_half)
-
-    # Get the starting and ending day for the timesheet
-    starting_day = 1 if first_half else 16
-    ending_day = 15 if first_half else totals.get_number_of_days()
-    # print('-', starting_day, ending_day)
+    totals = process_data(df, master_project_list, starting_day, ending_day)
 
     # Get the list of projects in the data in the right order
     # aux = totals.get_project_list()
@@ -218,5 +234,8 @@ if __name__ == '__main__':
     # print('totals date', totals.get_date_totals())
 
     # print(totals.get_number_of_days())
-    write_timesheet(totals, sorted_project_list,
-                    starting_day, ending_day, output_file)
+    if len(totals) > 0:
+        write_timesheet(totals, sorted_project_list,
+                        starting_day, ending_day, output_file)
+    else:
+        print('no data for the day range')

@@ -15,19 +15,25 @@ class Totals:
         self.project_totals = {}
         self.reference_date = None
 
-    def add(self, project: str, date: str, time: str, first_half: bool):
+    def __len__(self):
+        return len(self.data)
+
+    def add(self, project: str, date: str, time: str, start_day: int, end_day: int):
         """
         Add time data for a given project and time of the day
         :param project: project name
         :param date: date
         :param time: time
-        :param first_half: first of second part of the month?
+        :param start_day: starting day
+        :param end_day: ending day
         """
 
         dt = datetime.strptime(date, '%d/%m/%Y')
         if self.reference_date is None:
             self.reference_date = dt
-        if dt.day > 15 and first_half:
+
+        # Skip days that are not within the day range
+        if dt.day < start_day or dt.day > end_day:
             return
 
         hours, new_error = closest_fraction(convert_time(time))
@@ -104,16 +110,6 @@ class Totals:
         :return: total time in decimal hours
         """
         return sum(self.day_totals.values())
-
-    def get_number_of_days(self) -> int:
-        """
-        Return the number of days in the month being processed
-        :return: number of days
-        """
-        if self.reference_date is not None:
-            return days_in_month(self.reference_date)[1]
-        else:
-            return 0
 
     def dump(self):
         """
@@ -195,11 +191,10 @@ def column_name(column_number: int) -> str:
     :param column_number: column number (zero indexed)
     :return: column name
     """
-    column_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
-                   'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
-                   'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    column_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+                   'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+                   'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK']
     if column_number < len(column_list):
-        # index = day - 1 if day < 16 else day - 16
         return column_list[column_number]
     else:
         raise ValueError(f'Bad column number {column_number}')
