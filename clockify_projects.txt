@@ -1,7 +1,3 @@
-# Admin
-ES admin Internal
-ES outreach and dei
-ES sw training
 # Core
 Day time operations
 Fault report resolution
@@ -12,6 +8,10 @@ Gems in queue
 GNAO RTC
 GNAO Sysco
 GLAO
+# Admin
+ES admin internal
+ES outreach and dei
+ES sw training
 # Time off
 Holiday
 Vacation
