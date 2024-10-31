@@ -4,6 +4,6 @@
 
 conda activate py310
 
-python /Users/pgigoux/PycharmProjects/git_misc/ctimecard.py "$@"
+python $HOME/PycharmProjects/misc/ctimecard.py "$@"
 
 conda deactivate
